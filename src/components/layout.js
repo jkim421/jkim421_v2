@@ -2,11 +2,11 @@ import React from 'react'
 import SEO from '../components/seo'
 import './layout.css';
 
-const Layout = () => (
+const Layout = ({ children }) => (
   <>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div>
-      Home
+    <div id='main'>
+      { children }
     </div>
   </>
 );
